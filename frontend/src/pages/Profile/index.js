@@ -14,17 +14,17 @@ export default function Profile() {
   const history = useHistory();
 
   useEffect(() => {
-    /*api
+    api
       .get("/profile", {
         headers: { Authorization: ongId }
       })
       .then(response => {
         setIncidents(response.data);
-      });*/
+      });
   }, [ongId]);
 
   async function handleDeleteIncident(id) {
-    /*try {
+    try {
       await api.delete(`incidents/${id}`, {
         headers: {
           Authorization: ongId
@@ -34,7 +34,7 @@ export default function Profile() {
       setIncidents(incidents.filter(incident => incident.id !== id));
     } catch (err) {
       alert("Erro ao deletar o caso");
-    }*/
+    }
   }
 
   function handleLogout() {
